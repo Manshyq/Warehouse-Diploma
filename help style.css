@@ -1,0 +1,322 @@
+
+  @media screen and (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+
+    .menu-bar, .sidebar {
+      width: 100%;
+      box-shadow: none;
+    }
+
+    .menu-item {
+      text-align: center;
+      padding: 10px;
+    }
+
+    .main {
+      width: 100%;
+      padding: 0.5rem;
+    }
+
+    .header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .header .search {
+      width: 100%;
+      margin-top: 1rem;
+    }
+
+    .header select, .header input[type="search"] {
+      width: 100%;
+    }
+
+    .products {
+      grid-template-columns: 1fr;
+    }
+
+    .product-info {
+      flex-direction: column;
+    }
+
+    .product-info div, .product-info .qr-code {
+      flex-basis: 100%;
+      margin-bottom: 1rem;
+    }
+
+    .product-details img {
+      float: none;
+      display: block;
+      margin: 0 auto 1rem auto; /* Center image */
+      width: 50%; /* Adjust image size for mobile */
+    }
+  }
+  
+  /* You can also add more specific media queries for different breakpoints, e.g. */
+  @media screen and (max-width: 480px) {
+    /* Adjust styles for very small screens if necessary */
+  }
+
+  :root {
+    --sidebar-bg: #E6E7EE;
+    --sidebar-active-color: #6F42C1;
+    --main-bg: #FFFFFF;
+    --text-color: #343A40;
+    --secondary-text-color: #6C757D;
+    --border-color: #E9ECEF;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text-color);
+  }
+
+.menu-bar {
+    background-color: #fff; /* White background for the menu */
+    box-shadow: 4px 0 8px rgba(0,0,0,0.1); /* Shadow on the right side */
+    width: 200px;
+    padding-top: 20px;
+  }
+  .menu-item {
+    display: block;
+    padding: 10px 20px;
+    color: #aaa; /* Gray color for non-active items */
+    text-decoration: none;
+    font-size: 16px;
+    border-left: 5px solid transparent; /* Invisible border for alignment */
+  }
+  .menu-item:hover {
+    background-color: #f0f0f0; /* Slightly darker background on hover */
+  }
+  .active {
+    color: #fff; /* White text for active item */
+    background-color: #6F42C1; /* Purple background for active item */
+    border-left: 5px solid #6F42C1; /* Purple border for active item */
+    border-radius: 10px;
+  }
+
+  .container {
+    display: flex;
+    height: 100vh;
+  }
+
+  .sidebar {
+    width: 250px;
+    background-color: var(--sidebar-bg);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .sidebar .active {
+    color: var(--sidebar-active-color);
+  }
+
+  .main {
+    flex-grow: 1;
+    background-color: var(--main-bg);
+    padding: 1rem;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+
+  .header .search {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+  }
+
+  .header select {
+    padding: 0.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 0.25rem;
+    background-color: var(--main-bg);
+  }
+
+  .header input[type="search"] {
+    padding: 0.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 0.25rem;
+  }
+
+  .faq-container {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 20px;
+  max-width: 800px; /* Adjust as needed */
+  margin: auto;
+}
+
+.search-bar {
+  margin-bottom: 20px;
+}
+
+.search-bar input[type="search"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.category-container {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.category {
+  background-color: #f0f0f0;
+  border-radius: 4px;
+  padding: 10px;
+  text-align: center;
+}
+
+h4 {
+  display: inline;
+}
+
+.view-all {
+  float: right;
+  text-decoration: none;
+  color: blue;
+}
+
+.question {
+  font-weight: bold;
+  color: #333;
+}
+.faq-section {
+  margin-top: 10px;
+}
+
+.faq-item {
+  background-color: #fff;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.faq-question {
+  cursor: pointer;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-answer {
+  padding: 15px;
+  border-top: 1px solid #eee;
+  display: none; /* Hide answers by default */
+}
+
+.toggle-sign {
+  font-size: 24px; /* Adjust size as needed */
+}
+
+/* Add more styling as needed */
+
+
+
+
+.chat-container {
+  font-family: Arial, sans-serif;
+  max-width: 400px; /* adjust as needed for your layout */
+  margin: auto;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.chat-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background: #fff;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.messages {
+  padding: 10px;
+}
+
+.message {
+  display: flex;
+  align-items: end;
+  margin-bottom: 10px;
+}
+
+.message.support {
+  flex-direction: row;
+}
+
+.message.user {
+  flex-direction: row-reverse;
+}
+
+.message .text {
+  background: #e0e0ff; /* light blue for support */
+  border-radius: 15px;
+  padding: 10px;
+  margin: 0 10px;
+}
+
+.message.user .text {
+  background: #ffe0e0; /* light red for user */
+}
+
+.timestamp {
+  font-size: 0.75em;
+  color: #666;
+}
+
+.chat-input {
+  display: flex;
+  padding: 10px;
+  background: #fff;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.chat-input input {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+}
+
+.avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+
+.help-support-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch; /* This will make both children of the same height */
+}
+
+.faq-container, .chat-support-container {
+  flex: 1; /* Both containers take up equal width */
+  margin: 10px; /* Optional: adds space between the containers */
+  /* Your existing styles for faq-container and chat-support-container */
+}
