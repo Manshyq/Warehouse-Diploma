@@ -104,7 +104,6 @@
 
   .container {
     display: flex;
-    height: 100vh;
   }
 
   .sidebar {
@@ -132,7 +131,31 @@
     align-items: center;
     margin-bottom: 2rem;
   }
-
+                                                                                    /*SEARCH FUNCTION*/
+  .search-results {
+      width: 100%; /* Match the search bar width */
+      max-height: 200px; /* Adjust based on your preference */
+      overflow-y: auto; /* Enable scrolling for overflow */
+      position: absolute; /* Position it below the search bar */
+      z-index: 1000; /* Ensure it's above other content */
+      background-color: #fff; /* Match your site's design */
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional: adds shadow for depth */
+      border-radius: 4px; /* Optional: rounds the corners */
+  }
+  .search-results .result-item {
+      padding: 10px;
+      border-bottom: 1px solid #eee; /* Adds a separator between items */
+      cursor: pointer; /* Indicates an item can be clicked */
+  }
+  .search-results .result-item:last-child {
+      border-bottom: none; /* Removes the bottom border for the last item */
+  }
+  .search-results .result-item:hover {
+      background-color: #f9f9f9; /* Highlight item on hover */
+  }
+#searchInput{
+  width:400px;
+}
   .header .search {
     display: flex;
     gap: 0.5rem;
@@ -194,14 +217,25 @@
     background-color: #fff; /* White background */
     font-family: Arial, sans-serif;
   }
+
+
+
+
+
+
   table {
     width: 100%;
-    border-collapse: separate;
+    border-collapse: collapse;
     border-spacing: 0;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Shadow effect */
     border-radius: 8px;
-    overflow: hidden;
+
+    overflow-y: auto; /* Enables vertical scrolling */
+    overflow-x: hidden; /* Hides horizontal scroll bar */
   }
+
+
+
   th, td {
     text-align: left;
     padding: 16px;
@@ -221,11 +255,13 @@
   }
   tr:last-child td {
     border-bottom: none;
+
   }
   .product-image img {
     width: 50px; /* Adjust as necessary */
     height: auto;
     border-radius: 5px;
+    cursor: pointer;
   }
   /* Adjust spacing between columns */
   .name-column {
@@ -280,6 +316,7 @@
     background-color: #fff;
     padding: 20px;
     margin-top: 20px;
+
   }
 
   .product-details img {
