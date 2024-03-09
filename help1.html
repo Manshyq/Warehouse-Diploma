@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Warehouse Dashboard</title>
+<link rel="stylesheet" href="help1.css">
+</head>
+<body>
+
+<div class="container">
+
+<nav class="menu-bar">
+  <a href="dashboard.html" class="menu-item">Dashboard</a>
+  <a href="products.html" class="menu-item">Products</a>
+  <a href="customers.html" class="menu-item">Customers</a>
+  <a href="income.html" class="menu-item">Income</a>
+  <a href="help1.html" class="menu-item active">Help</a>
+</nav>
+
+
+  <main class="main">
+    <div class="header">
+      <h1>Warehouse 100 in 1</h1>
+    </div>
+    
+  
+  <div class="help-support-container">
+
+
+                                                                                        <!-- FAQ-->
+<div class="faq-container">
+  <h2>FAQ</h2>
+  <h3>How can we help you?</h3>
+  <div class="search-bar">
+    <input type="search" placeholder="Enter your keyword">
+  </div>
+  <div class="category-container">
+    <div class="category">Questions about Getting Started</div>
+    <div class="category">Questions about How to Edit</div>
+    <div class="category">Questions about Payment Methods</div>
+  </div>
+  <h4>Top Questions</h4>
+    <a href="help view all.html" class="view-all">View all</a>
+ <div class="faq-section">
+  <div class="faq-item">
+    <div class="faq-question" onclick="toggleAnswer('answer1')">
+      <h4>How to create an account?</h4>
+      <span class="toggle-sign" id="toggle1">+</span>
+    </div>
+    <div class="faq-answer" id="answer1">
+      <p>Open the Warehouse app to get started and follow the steps. Warehouse doesn’t charge a fee to create or maintain your Tradebase account.</p>
+    </div>
+  </div>
+
+    <div class="faq-item">
+    <div class="faq-question" onclick="toggleAnswer('answer2')">
+      <h4>How do I edit product information?</h4>
+      <span class="toggle-sign" id="toggle2">+</span>
+    </div>
+    <div class="faq-answer" id="answer2">
+      <p>You can edit product information by navigating to the product page, selecting the product you wish to edit, and clicking the 'Edit' button. Make sure to save any changes before exiting the page.</p>
+    </div>
+  </div>
+
+    <div class="faq-item">
+    <div class="faq-question" onclick="toggleAnswer('answer3')">
+      <h4>Is it possible to delete a product from the inventory?</h4>
+      <span class="toggle-sign" id="toggle3">+</span>
+    </div>
+    <div class="faq-answer" id="answer3">
+      <p>Yes, you can delete a product by selecting the product on the product page and clicking the 'Delete' button. Please note that this action cannot be undone.</p>
+    </div>
+  </div>
+  <!-- Repeat for other FAQ items -->
+</div>
+</div>
+
+
+
+
+
+
+                                                                                <!-- CHAT SUPPORT -->
+<!-- ... your existing HTML above ... -->
+<div class="chat-support-icon" id="chat-icon" onclick="openChatSupport()">
+  <div class="chat-icon-container">
+    <!-- Chat icon -->
+    <div class="chat-icon">💬</div>
+  </div>
+  <div class="chat-message-bubble">
+    <span class="chat-name">Warehouse 100 in 1</span>
+    <p>Hello! We are ready to help you. If you have any questions, please let us know!</p>
+  </div>
+</div>
+
+
+
+
+<div class="chat-support-container" id="chatSupportContainer">
+ <div class="chat-header">
+    <!-- Back arrow to close chat -->
+    <div id="backArrow" onclick="closeChatSupport()">←</div>
+    <!-- Centered Chat Support title -->
+    <div class="chat-support-title">Chat Support</div>
+    <!-- Placeholder div to balance the header layout -->
+    <div class="header-placeholder"></div>
+  </div>
+
+  <!-- Messages will go here -->
+  <div class="chat-messages" id="chatMessages">
+    <!-- Chat messages will be dynamically inserted here -->
+  </div>
+
+  <!-- Input area for writing messages -->
+  <div class="chat-input">
+    <input type="text" placeholder="Write a message..." id="chatInput">
+    <!-- Icon to upload documents -->
+    <div class="upload-icon" onclick="uploadDocument()">📎</div>
+    <button onclick="sendMessage()" aria-label="Send message" style="font-size: 16px;">📤</button>
+
+  </div>
+</div>
+</div>
+
+
+  </main>
+</div>
+<div class="footer">
+  <!-- Footer content -->
+</div>
+  <script src="help.js"></script>
+</body>
+</html>
