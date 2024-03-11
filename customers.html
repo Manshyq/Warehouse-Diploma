@@ -7,18 +7,16 @@
 <link rel="stylesheet" href="customers style.css">
 </head>
 <body>
+
 <div class="container">
 
 <nav class="menu-bar">
   <a href="dashboard.html" class="menu-item">Dashboard</a>
-  <a href="products.html" class="menu-item">Products</a>
+  <a href="index.html" class="menu-item">Products</a>
   <a href="customers.html" class="menu-item active">Customers</a>
   <a href="income.html" class="menu-item">Income</a>
-  <a href="help.html" class="menu-item">Help</a>
-
+  <a href="help1.html" class="menu-item">Help</a>
 </nav>
-
-
 
 
   <main class="main">
@@ -29,8 +27,10 @@
 
         <select>
           <option>Last 30 days</option>
-	  <option>Last week</option>
-	<option>Today</option>
+	        <option>Last week</option>
+	        <option>Today</option>
+          <option>Yesterday</option>
+          <option>Choose a period</option>
           <!-- Add more options here -->
         </select>
       </div>
@@ -49,48 +49,49 @@
     </tr>
   </thead>
   <tbody>
-    <tr>
+    <tr onclick="showProductDetails('customer1-details')">
       <td class="product-image"><img src="pictures/jack-jones.jpeg" alt="Jack Jones"></td>
       <td><b>Jack Jones</b></td>
       <td>8 747 554 6787</td>
       <td>Monday, March 6</td>
       <td>40</td>
     </tr>
-    <tr>
+    <tr onclick="showProductDetails('customer2-details')">
       <td class="product-image"><img src="pictures/aliya.jpeg" alt="Aliya Nazarova"></td>
       <td><b>Aliya Nazarova</b></td>
       <td>8 747 333 6787</td>
       <td>Wednesday, March 8</td>
       <td>10</td>
     </tr>
-    <tr>
+    <tr onclick="showProductDetails('customer3-details')">
       <td class="product-image"><img src="pictures/girl.jpeg" alt="Kim Lee "></td>
       <td><b>Kim Lee</b></td>
       <td>8 777 123 6787</td>
       <td>Monday, March 6</td>
       <td>40</td>
     </tr>
-    <tr>
+    <tr onclick="showProductDetails('customer4-details')"> 
       <td class="product-image"><img src="pictures/Kim.png" alt="Aibek Kim"></td>
       <td><b>Aibek Kim</b></td>
       <td>8 747 554 6787</td>
       <td>Monday, March 6</td>
       <td>40</td>
     </tr>
-    <tr>
+    <tr onclick="showProductDetails('customer5-details')">
       <td class="product-image"><img src="pictures/Aigerim.png" alt="Aigerim Ali"></td>
       <td><b>Aigerim Ali</b></td>
       <td>8 747 333 6787</td>
       <td>Wednesday, March 8</td>
       <td>10</td>
     </tr>
-    <tr>
+    <tr onclick="showProductDetails('customer6-details')">
       <td class="product-image"><img src="pictures/Rustam.png" alt="Rustam Bolatovich"></td>
       <td><b>Rustam Bolatovich</b></td>
       <td>8 777 123 6787</td>
       <td>Monday, March 6</td>
       <td>40</td>
-    </tr><tr>
+    </tr>
+    <tr onclick="showProductDetails('customer7-details')">
       <td class="product-image"><img src="pictures/Jennifer.png" alt="Jennifer Aniston"></td>
       <td><b>Jennifer Aniston</b></td>
       <td>8 747 554 6787</td>
@@ -103,10 +104,133 @@
 </table>
 
 
+
+
+                                                                              <!-- CUSTOMER DETAILS-->
+<div class="customer-details" id="customer1-details" >
+  <img src="pictures/jack-jones.jpeg" alt="Chocolate Muffin">
+  <h2>Jack Jones</h2>
+  <div class="customer-info">
+    <div>
+      <h3>Order history</h3>
+      <p>Monday, March 6 2022 22:30:12</p>
+    </div>
+    <div>
+      <h3>Phone number</h3>
+      <p>8 747 554 6787</p>
+      <h3>Email</h3>
+      <p>john.brown@gmail.com</p>
+    </div>
+  </div>
+</div>
+
+<div class="customer-details" id="customer2-details" style="display: none;">
+  <img src="pictures/aliya.jpeg" alt="Chocolate Muffin">
+  <h2>Aliya Nazarova</h2>
+  <div class="customer-info">
+    <div>
+      <h3>Order history</h3>
+      <p>Monday, March 6 2022 22:30:12</p>
+    </div>
+    <div>
+      <h3>Phone number</h3>
+      <p>8 747 554 6787</p>
+      <h3>Email</h3>
+      <p>john.brown@gmail.com</p>
+    </div>
+  </div>
+</div>
+
+<div class="customer-details" id="customer3-details" style="display: none;">
+  <img src="pictures/girl.jpeg" alt="Chocolate Muffin">
+  <h2>Kim Lee</h2>
+  <div class="customer-info">
+    <div>
+      <h3>Order history</h3>
+      <p>Monday, March 6 2022 22:30:12</p>
+    </div>
+    <div>
+      <h3>Phone number</h3>
+      <p>8 747 554 6787</p>
+      <h3>Email</h3>
+      <p>john.brown@gmail.com</p>
+    </div>
+  </div>
+</div>
+
+<div class="customer-details" id="customer4-details" style="display: none;">
+  <img src="pictures/kim.jpeg" alt="Chocolate Muffin">
+  <h2>Aibek Kim</h2>
+  <div class="customer-info">
+    <div>
+      <h3>Order history</h3>
+      <p>Monday, March 6 2022 22:30:12</p>
+    </div>
+    <div>
+      <h3>Phone number</h3>
+      <p>8 747 554 6787</p>
+      <h3>Email</h3>
+      <p>john.brown@gmail.com</p>
+    </div>
+  </div>
+</div>
+
+<div class="customer-details" id="customer5-details" style="display: none;">
+  <img src="pictures/aigerim.jpeg" alt="Chocolate Muffin">
+  <h2>Aigerim Ali</h2>
+  <div class="customer-info">
+    <div>
+      <h3>Order history</h3>
+      <p>Monday, March 6 2022 22:30:12</p>
+    </div>
+    <div>
+      <h3>Phone number</h3>
+      <p>8 747 554 6787</p>
+      <h3>Email</h3>
+      <p>john.brown@gmail.com</p>
+    </div>
+  </div>
+</div>
+
+<div class="customer-details" id="customer6-details" style="display: none;">
+  <img src="pictures/rustam.jpeg" alt="Chocolate Muffin">
+  <h2>Rustam Bolatovich </h2>
+  <div class="customer-info">
+    <div>
+      <h3>Order history</h3>
+      <p>Monday, March 6 2022 22:30:12</p>
+    </div>
+    <div>
+      <h3>Phone number</h3>
+      <p>8 747 554 6787</p>
+      <h3>Email</h3>
+      <p>john.brown@gmail.com</p>
+    </div>
+  </div>
+</div>
+
+<div class="customer-details" id="customer7-details" style="display: none;">
+  <img src="pictures/jennifer.jpeg" alt="Chocolate Muffin">
+  <h2>Jennifer Aniston</h2>
+  <div class="customer-info">
+    <div>
+      <h3>Order history</h3>
+      <p>Monday, March 6 2022 22:30:12</p>
+    </div>
+    <div>
+      <h3>Phone number</h3>
+      <p>8 747 554 6787</p>
+      <h3>Email</h3>
+      <p>john.brown@gmail.com</p>
+    </div>
+  </div>
+</div>
+
   </main>
 </div>
 <div class="footer">
   <!-- Footer content -->
+  <script src="customers.js"></script>
 </div>
 </body>
 </html>
