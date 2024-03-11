@@ -49,6 +49,8 @@ document.addEventListener('DOMContentLoaded', function() {
 const products = [
     { id: 'soya-milk-details', name: 'Soya Milk', image: 'pictures/soya-milk.jpeg' },
     { id: 'chocolate-muffin-details', name: 'Chocolate Muffin', image: 'pictures/chocolate-muffin.jpeg' },
+    { id: 'paper-cups-details', name: 'Paper cups', image: 'pictures/paper-cups.jpeg'},
+    { id: 'lemonade-details', name: 'Lemonade', image: 'pictures/lemonade.jpeg'}
     // Add more products here
 ];
 
