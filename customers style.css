@@ -14,9 +14,6 @@
       padding: 10px;
     }
 
-    /* ... [UPGRADE BUTTON NOT READY YET] ... */
-
-
     .main {
       width: 100%;
       padding: 0.5rem;
@@ -107,7 +104,7 @@
 
   .container {
     display: flex;
-    height: 100vh;
+    height: flex;
   }
 
   .sidebar {
@@ -243,40 +240,40 @@
   .sales-column {
     width: 100px;
   }
-.product-info {
+.customer-info {
     display: flex;
     justify-content: space-between; /* Space out the sections */
     margin-top: 20px;
   }
 
-  .product-info div {
+  .customer-info div {
     flex-basis: 30%; /* Divide the space evenly */
   }
 
-  .product-info .qr-code {
+  .customer-info .qr-code {
     flex-basis: 15%; /* QR code doesn't need as much space */
     text-align: center; /* Center align the QR code */
   }
 
-  .product-info img {
+  .customer-info img {
     max-width: 100%;
     height: auto;
     border-radius: 4px; /* Rounded corners for the QR code */
   }
 
-  .product-info h3 {
+  .customer-info h3 {
     margin-top: 0;
     color: #333;
     font-size: 18px;
   }
 
-  .product-info p {
+  .customer-info p {
     color: #666;
     font-size: 14px;
     margin: 5px 0; /* Give some space between paragraphs */
   }
 
-  .product-details {
+  .customer-details {
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
@@ -285,7 +282,7 @@
     margin-top: 20px;
   }
 
-  .product-details img {
+  .customer-details img {
     /* Adjust as necessary, assuming a right-floated image */
     float: right;
     margin-left: 20px;
