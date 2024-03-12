@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Warehouse Dashboard</title>
+<link rel="stylesheet" href="dashboard.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+<body>
+<div class="container">
+
+<nav class="menu-bar">
+  <a href="dashboard.html" class="menu-item active">Dashboard</a>
+  <a href="index.html" class="menu-item ">Products</a>
+  <a href="customers.html" class="menu-item">Customers</a>
+  <a href="income.html" class="menu-item">Income</a>
+  <a href="help1.html" class="menu-item">Help</a>
+  <!-- Add more menu items as needed -->
+</nav>
+
+  <main class="main">
+    <div class="header">
+      <h1>Warehouse 100 in 1</h1>
+
+        <div class="search-wrapper" style="position: relative;">
+          <input type="search" placeholder="Search" id="searchInput">
+          <div id="searchResults" class="search-results" ></div>
+        </div>
+
+        <select>
+          <option>Last 30 days</option>
+          <option>Last week</option>
+          <option>Today</option>
+          <option>Yesterday</option>
+          <option>Choose a period</option>
+          <!-- Add more options here -->
+        </select>
+      </div>
+
+      <div class="dashboard-container">
+    <div class="stats-container">
+        <div class="stat earning">
+            <span class="stat-icon" style="background:green;">💲</span>
+            <div class="stat-details">
+                <p>Earning</p>
+                <h2>$198k</h2>
+                <span class="change up">🔼 37.8% this month</span>
+            </div>
+        </div>
+        <div class="stat balance">
+            <span class="stat-icon" style="background:blue;">💳</span>
+            <div class="stat-details">
+                <p>Balance</p>
+                <h2>$2.4k</h2>
+                <span class="change down">🔽 2% this month</span>
+            </div>
+        </div>
+        <div class="stat sales">
+            <span class="stat-icon" style="background:pink;">🛍️</span>
+            <div class="stat-details">
+                <p>Total Sales</p>
+                <h2>$89k</h2>
+                <span class="change up">🔼 11% this week</span>
+            </div>
+        </div>
+    </div>
+    <!-- Additional containers for Overview and Customers graphs would go here -->
+</div>
+
+
+<!-- Overview Container -->
+<div class="overview-container">
+    <div class="overview-header">
+        <h3>Overview</h3>
+        <select>
+            <option>Quarterly</option>
+            <!-- Other options -->
+        </select>
+    </div>
+    <div class="overview-chart">
+        <!-- Bar chart canvas element -->
+        <canvas id="overviewChart" aria-label="Monthly earnings overview" role="img"></canvas>
+    </div>
+</div>
+
+<!-- Customers Container -->
+<div class="customers-container">
+    <h3>Customers</h3>
+    <div class="customers-chart">
+        <!-- Pie chart canvas element -->
+        <canvas id="customersChart" aria-label="Customer distribution" role="img"></canvas>
+    </div>
+    <div class="customers-info">
+        <span class="percentage">65%</span>
+        <span>Total New Customers</span>
+    </div>
+</div>
+
+
+
+      </main>
+</div>
+<div class="footer">
+  <!-- Footer content -->
+</div>
+
+
+<script src="chart.js"></script>
+</body>
+</html>
